@@ -1,15 +1,26 @@
 <html>
 <head>
-   <title>Welcome to Edwin Clott's page! =]</title> 
-    <style>
-     body { /* Onedrive link to the Manoa Falls Photo */
-            background-image: url('Manoa Falls.jpg');
-            background-repeat: no-repeat;
-            background-size: cover; 
-          }
-    </style>
+   <title>Welcome to Edwin Clott's page! =]</title>
+   <style>
+     body {
+        background-image: url('Manoa Falls.jpg'); /* Ensure this path is correct */
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+     #floatingImage {
+        position: fixed;
+        top: 50px;
+        right: 30px;
+        width: 100px;
+        height: auto;
+        z-index: 1000;
+     }
+   </style>
 </head>
 <body>
+    <!-- Beach photo -->
+    <img src="beach.jpg" alt="Beach in Hawaii" id="floatingImage">
     <h1>Bio</h1>
     <p>The most important thing to know about me is I'm a proud husband and father. I usually spend all my free time with my family while enjoying the island life here in Hawaii. It is unique, to say the least.  I am a huge computer gamer as most of us are, and I just started playing Cities Skyline II. I am enjoying it so far as simulation-type games are among my favorite. </p>
 
