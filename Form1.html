@@ -66,23 +66,32 @@
     function calculateTotal() {
         var pricePerShirt = 15;
         var discountRate = 0.10; // 10% discount
-        var quantity = parseInt(document.getElementById('quantity').value); // Convert string to integer
+        var quantity = parseInt(document.getElementById('quantity').value);
 
         if (isNaN(quantity) || quantity < 1) {
             alert("Please enter a valid quantity.");
             return;
         }
 
-        var total = pricePerShirt * quantity;
+        var totalWithoutDiscount = pricePerShirt * quantity;
+        var total = totalWithoutDiscount;
+
+        // Element to display savings message
+        var savingsMessageElement = document.getElementById('savingsMessage');
 
         // Apply discount if more than one shirt is purchased
         if (quantity > 1) {
             total *= (1 - discountRate); // Applying 10% discount
+            var savings = totalWithoutDiscount - total; // Calculate savings
+            savingsMessageElement.textContent = "You saved $" + savings.toFixed(2) + " with the bulk order discount!";
+        } else {
+            savingsMessageElement.textContent = ""; // Clear the message if less than 2 shirts are ordered
         }
 
         document.getElementById('totalCost').textContent = total.toFixed(2);
     }
 </script>
+
 
 
 </body>
