@@ -1,17 +1,18 @@
+<!DOCTYPE html>
 <html>
-
-<style>
+<head>
+    <style>
         body {
             background-color: #121212; /* Dark background */
             color: #ffffff; /* White text */
-            font-family: Arial, sans-serif; /* Optional: Set a default font */
+            font-family: Arial, sans-serif; /* Default font */
         }
-</style>
+    </style>
+</head>
 <body>
-<p style='color:blue;
-          "text-alighed:center;">
-This is inside of the paragraph
-</p>
-<p> This is the second paragraph</p>
+    <p style="color: blue; text-align: center;">
+        This is inside of the paragraph
+    </p>
+    <p> This is the second paragraph</p>
 </body>
 </html>
