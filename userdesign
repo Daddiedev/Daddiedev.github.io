@@ -1,0 +1,9 @@
+<html>
+<body>
+<p style='color:blue;
+          "text-alighed:center;">
+This is inside of the paragraph
+</p>
+<p> This is the second paragraph</p>
+</body>
+<html>
