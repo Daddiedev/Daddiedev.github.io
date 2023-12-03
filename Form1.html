@@ -52,7 +52,6 @@
         <!-- Form for calculating total -->
     <form id="orderForm">
         <label for="quantity">Quantity:</label>
-        <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
         <p id="discountMessage" style="color: #FFD700;">Buy more than one shirt to get a 10% discount!</p>
 
@@ -67,7 +66,13 @@
     function calculateTotal() {
         var pricePerShirt = 15;
         var discountRate = 0.10; // 10% discount
-        var quantity = document.getElementById('quantity').value;
+        var quantity = parseInt(document.getElementById('quantity').value); // Convert string to integer
+
+        if (isNaN(quantity) || quantity < 1) {
+            alert("Please enter a valid quantity.");
+            return;
+        }
+
         var total = pricePerShirt * quantity;
 
         // Apply discount if more than one shirt is purchased
@@ -78,6 +83,7 @@
         document.getElementById('totalCost').textContent = total.toFixed(2);
     }
 </script>
+
 
 </body>
 <body>
