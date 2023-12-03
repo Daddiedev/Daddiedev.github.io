@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>HTML Renderer</title>
     <style>
         body {
             background-color: #121212; /* Dark background */
             color: #ffffff; /* White text */
             font-family: Arial, sans-serif; /* Default font */
+            padding: 20px;
+        }
+
+        textarea, .output {
+            width: 100%;
+            background-color: #1e1e1e; /* Darker background for text areas */
+            color: #ffffff; /* White text */
+            border: 1px solid #555; /* Dark border */
+            padding: 10px;
+            box-sizing: border-box; /* Makes width include padding and border */
+            margin-bottom: 10px;
+        }
+
+        .output {
+            white-space: pre-wrap; /* Ensures formatting of HTML is preserved */
+            min-height: 100px;
         }
     </style>
 </head>
 <body>
-    <p style="color: blue; text-align: center;">
-        This is inside of the paragraph
-    </p>
-    <p> This is the second paragraph</p>
+    <textarea id="htmlInput" placeholder="Enter HTML here"></textarea>
+    <div id="htmlOutput" class="output"></div>
+
+    <script>
+        document.getElementById('htmlInput').addEventListener('input', function() {
+            var htmlContent = this.value;
+            document.getElementById('htmlOutput').innerHTML = htmlContent;
+        });
+    </script>
 </body>
 </html>
