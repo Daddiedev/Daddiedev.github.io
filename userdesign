@@ -1,5 +1,19 @@
 <html>
 <body>
+<style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif; /* Optional: Set a default font */
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1e1e1e; /* Slightly lighter than body for contrast */
+            border-radius: 8px; /* Optional: Rounded corners for the form */
+        }
+</style>
 <p style='color:blue;
           "text-alighed:center;">
 This is inside of the paragraph
