@@ -3,6 +3,27 @@
 <head>
     <title>HTML Renderer</title>
     <style>
+        nav {
+    background-color: #333; /* Dark background for nav bar */
+    padding: 10px 0; /* Padding around the nav bar */
+    text-align: center; /* Center the nav links */
+}
+
+.nav-button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor to indicate clickable */
+}
+
+.nav-button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
         body {
             background-color: #121212; /* Dark background */
             color: #ffffff; /* White text */
@@ -27,6 +48,10 @@
     </style>
 </head>
 <body>
+     <nav>
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="orderForm.html" class="nav-button">Order Form</a>
+    </nav>
     <textarea id="htmlInput" placeholder="Enter HTML here"></textarea>
     <div id="htmlOutput" class="output"></div>
 
