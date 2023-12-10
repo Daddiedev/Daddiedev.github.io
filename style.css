@@ -1,41 +1,66 @@
-         body {
-            background-color: #121212; /* Dark background */
-            color: #ffffff; /* White text */
-            font-family: Arial, sans-serif; /* Optional: Set a default font */
+  body {
+            background-color: #121212; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif;
         }
 
         form {
             margin: 20px;
             padding: 20px;
-            background-color: #1e1e1e; /* Slightly lighter than body for contrast */
-            border-radius: 8px; /* Optional: Rounded corners for the form */
+            background-color: #1e1e1e; 
+            border-radius: 8px; 
         }
 
         label {
-            display: block; /* Makes each label appear on a new line */
-            margin-bottom: 5px; /* Space between label and input */
+            display: block; 
+            margin-bottom: 5px;
         }
 
         input, button {
-            padding: 5px; /* Padding for input fields and buttons */
-            margin-bottom: 10px; /* Space between form elements */
+            padding: 5px;
+            margin-bottom: 10px; 
         }
 
         button {
-            background-color: #4CAF50; /* Color for buttons */
+            background-color: #4CAF50; 
             color: white;
             border: none;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #45a049; /* Darker shade for button on hover */
+            background-color: #45a049; 
         }
 
         #floatingImage {
             width: 600px;
             height: auto;
-            display: block; /* Center the image */
+            display: block; 
             margin-left: auto;
             margin-right: auto;
+        }
+
+.nav-button:hover {
+    background-color: #45a049;
+}
+        body {
+            background-color: #121212; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif; 
+            padding: 20px;
+        }
+
+        textarea, .output {
+            width: 100%;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 1px solid #555;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .output {
+            white-space: pre-wrap; 
+            min-height: 100px;
         }
