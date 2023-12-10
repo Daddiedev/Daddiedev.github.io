@@ -18,9 +18,34 @@
 
     <main>
         <section id="content">
-            <h2>Page Title</h2>
-            <p>Page content goes here...</p>
+            <h2>Favorite media</h2>
+           <p>Here are some videos that best represent my interests:</p>
+
+        <!-- Video Game GTA 6 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=unqjgIRt8dH79xjt" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Lakers-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NJNSgOE0AvE?si=99b9Obf5WeE0mbEr" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Billy Idol-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a6u00EcpNcs?si=6L_hFwsmKo9tw3CT" frameborder="0" allowfullscreen></iframe>
         </section>
+
+        <div class="video-container">
+            .video-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+    gap: 10px; /* Adjusts the space between videos */
+}
+
+.video-container iframe {
+    width: 100%; /* Makes the video fill the grid column */
+    height: auto; /* Maintain aspect ratio */
+}
+
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
+
     </main>
 
     <!-- NAV -->
