@@ -2,24 +2,48 @@
 <html>
 <head>
     <title>HTML Renderer</title>
-    <style>
-        nav {
-    background-color: #333; /* Dark background for nav bar */
-    padding: 10px 0; /* Padding around the nav bar */
-    text-align: center; /* Center the nav links */
-}
+ <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif; /* Optional: Set a default font */
+        }
 
-.nav-button {
-    background-color: #4CAF50; /* Green background for buttons */
-    color: white;
-    padding: 10px 20px;
-    margin: 0 10px;
-    text-decoration: none; /* Remove underline from links */
-    font-size: 16px;
-    border: none;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Cursor to indicate clickable */
-}
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1e1e1e; /* Slightly lighter than body for contrast */
+            border-radius: 8px; /* Optional: Rounded corners for the form */
+        }
+
+        label {
+            display: block; /* Makes each label appear on a new line */
+            margin-bottom: 5px; /* Space between label and input */
+        }
+
+        input, button {
+            padding: 5px; /* Padding for input fields and buttons */
+            margin-bottom: 10px; /* Space between form elements */
+        }
+
+        button {
+            background-color: #4CAF50; /* Color for buttons */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker shade for button on hover */
+        }
+
+        #floatingImage {
+            width: 600px;
+            height: auto;
+            display: block; /* Center the image */
+            margin-left: auto;
+            margin-right: auto;
+        }
 
 .nav-button:hover {
     background-color: #45a049; /* Darker shade for hover effect */
